@@ -1,108 +1,121 @@
-# CodeAlpha_MatrixOperation
-# 🏦 Bank Account Management System (Mini Project in C)
+ # 🔢 Matrix Operations in C (Addition, Multiplication & Transpose)
 
-## 📌 Project Description
+## 📌 Project Overview
 
-The **Bank Account Management System** is a menu-driven console application developed using the **C Programming Language**.
+This project is a **Matrix Operations Program** written in the **C Programming Language**.
 
-This mini project simulates basic banking operations such as account creation, deposit, withdrawal, and balance enquiry.
-The system uses **Structures**, **Functions**, and **File Handling** to permanently store account information.
+The program performs essential matrix operations using **functions** and **2D arrays** to maintain modularity and clean program structure.
 
 ---
 
 ## 🚀 Features
 
-✅ Create New Bank Account
-✅ Deposit Money
-✅ Withdraw Money
-✅ Balance Enquiry
-✅ Permanent Data Storage using File Handling
-✅ Menu Driven Interface
+* Matrix Addition
+* Matrix Multiplication
+* Matrix Transpose
+* Modular Programming using Functions
+* User Input Based Execution
+* 2D Array Implementation
 
 ---
 
 ## 🛠️ Technologies Used
 
 * C Programming Language
-* Structures
 * Functions
-* Binary File Handling
+* Two-Dimensional Arrays
+* Nested Loops
 * GCC Compiler / Turbo C
-* Command Line Interface (CLI)
 
 ---
 
 ## 📂 Project Structure
 
-```id="pr9t12"
-bank-management-system/
+```
+matrix-operations/
 │
-├── bank.c
-├── bank.dat   (auto created)
+├── matrix.c
 └── README.md
 ```
 
 ---
 
-## ⚙️ Concepts Implemented
+## ⚙️ Program Modules
 
-* Structure (`struct Account`)
-* Modular Programming
-* File Handling (`fopen`, `fread`, `fwrite`, `fseek`)
-* Menu Driven Program
-* Data Persistence
+### 1. Input Matrix
 
----
+Takes matrix elements from the user.
 
-## 💻 How to Run the Program
+### 2. Display Matrix
 
-### Step 1: Compile
+Prints matrix in proper format.
 
-```bash id="3mkd71"
-gcc bank.c -o bank
-```
+### 3. Matrix Addition
 
-### Step 2: Execute
+Adds two matrices if dimensions are equal.
 
-```bash id="7plc29"
-./bank
-```
+### 4. Matrix Multiplication
+
+Multiplies matrices when columns of first matrix equal rows of second matrix.
+
+### 5. Matrix Transpose
+
+Converts rows into columns.
 
 ---
 
-## 🧾 Sample Menu Output
+## 💻 How to Run
 
-```id="98dwk2"
-===== BANK MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit
-3. Withdraw
-4. Balance Enquiry
-5. Exit
+### Compile Program
+
+```
+gcc matrix.c -o matrix
+```
+
+### Run Program
+
+```
+./matrix
 ```
 
 ---
 
-## 📁 Data Storage
+## 🧾 Example Output
 
-All account information is stored permanently in:
-
-```id="l5a8rz"
-bank.dat
 ```
+Enter rows and columns of Matrix A: 2 2
+Enter elements of Matrix A:
+1 2
+3 4
 
-The file is automatically created when a new account is added.
+Enter rows and columns of Matrix B: 2 2
+Enter elements of Matrix B:
+5 6
+7 8
+
+Addition Result:
+6 8
+10 12
+
+Multiplication Result:
+19 22
+43 50
+
+Transpose Matrix:
+1 3
+2 4
+```
 
 ---
 
 ## 🎯 Learning Objectives
 
-This project helps students understand:
+This project demonstrates:
 
-* Real-world banking logic implementation
-* File handling in C
-* Record management systems
-* Structured programming concepts
+* Modular programming concepts
+* Function implementation in C
+* Matrix manipulation techniques
+* Multi-dimensional array usage
 
 ---
 
@@ -115,4 +128,4 @@ BCA Student
 
 ## 📄 License
 
-This project is created for **educational and internship submission purposes**.
+Created for educational and internship submission purposes.
